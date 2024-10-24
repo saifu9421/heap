@@ -45,7 +45,18 @@ using namespace std;
                }
                     
       };
-       
+           
+
+           void  heap_sort(vector<int> &v){
+                   sort(v.begin(),v.end()); 
+          };
+           
+          void print(vector<int> v){
+      for(int i = 0; i<v.size(); i++){
+           cout<<v[i]<<" ";
+      };
+          };
+           
  int main(){
           
            int n;
@@ -56,10 +67,8 @@ using namespace std;
             };
 
        array_to_heap_convert(v);
-
-      for(int i = 0; i<n; i++){
-           cout<<v[i]<<" ";
-      };
+            heap_sort(v);
+         print(v);
 
      return 0;
  }
