@@ -27,14 +27,13 @@ using namespace std;
                    int curIdx = v.size()-1;
                   upHeap(curIdx);
            };
-
+           
            void print(){ 
                      for(int i = 0; i<v.size();i++){
                          cout<<v[i]<<" ";
                      }
            };
             
-           
    };
   
  int main(){
